@@ -4,6 +4,7 @@ O Basic Encryption Standard (BES) é um algoritmo simples de criptografia basead
 
 ## Funcionalidades
 + Conversão de texto para binário
++ Geração de chave
 + Separação de binário em matrizes 4x4
 + Troca entre colunas 1/2 e 3/4 de todas as matrizes e a chave
 + XOR entre bits das matrizes com a chave
@@ -13,15 +14,16 @@ O Basic Encryption Standard (BES) é um algoritmo simples de criptografia basead
 
 1. Clone o reposiório
 ```bash
-git clone https://github.com/seu-usuario/BasicEncryptionStandard.git
+git clone https://github.com/zezevitor/BES.git
 ```
 
 2. Compile o código:
 ```bash
-javac BasicEncryptionStandard.java
+cd .\BES\src\
+javac Main.java
 ```
 
 3. Execute o programa:
 ```bash
-java BasicEncryptionStandard
+java Main
 ```
