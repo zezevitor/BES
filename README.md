@@ -13,7 +13,7 @@ O Basic Encryption Standard (BES) é um algoritmo simples de criptografia basead
 
 1. Clone o reposiório
 ```bash
-git clone https://github.com/seu-usuario/BasicEncryptionStandard.git
+https://github.com/zezevitor/BES.git
 ```
 
 2. Compile o código:
