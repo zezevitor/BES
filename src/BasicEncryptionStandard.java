@@ -1,14 +1,14 @@
+import java.util.Random;
+
 public class BasicEncryptionStandard {
     // Converte uma string para binário
     public String stringToBinary(String s) {
         byte[] bytes = s.getBytes();
         StringBuilder bin = new StringBuilder();
 
-        for (byte b : bytes)
-        {
+        for (byte b : bytes) {
            int val = b;
-           for (int i = 0; i < 8; i++)
-           {
+           for (int i = 0; i < 8; i++) {
               bin.append((val & 128) == 0 ? 0 : 1);
               val <<= 1;
            }
@@ -16,6 +16,24 @@ public class BasicEncryptionStandard {
         
         return bin.toString();
     };
+
+    // Gera uma chave aleatória
+    public int[][] generateKey() {
+        int[][] key = new int[4][4];
+        Random r = new Random();
+
+        System.out.println("\nChave: ");
+        for (int i = 0; i < 4; i++) {
+            for (int j = 0; j < 4; j++) {
+                key[i][j] = r.nextInt(2);
+                System.out.print(key[i][j] + " ");
+            }
+            
+            System.out.print("\n");
+        }
+
+        return key;
+    }
 
     // Criptograva uma string binária a partir de uma chave binária 4x4
     public String encrypt(String bin, int[][] key) {
@@ -35,8 +53,6 @@ public class BasicEncryptionStandard {
         xor(textBlocks, copyKey);
         
         swapColumns(textBlocks);
-        
-        printBlocks(textBlocks);
 
         return blocksToString(textBlocks);
     };
@@ -59,8 +75,6 @@ public class BasicEncryptionStandard {
         xor(textBlocks, copyKey);
         
         reverseShiftRows(textBlocks);
-
-        printBlocks(textBlocks);
 
         return blocksToString(textBlocks);
     };
