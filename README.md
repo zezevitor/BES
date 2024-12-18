@@ -18,10 +18,11 @@ git clone https://github.com/zezevitor/BES.git
 
 2. Compile o código:
 ```bash
-javac BasicEncryptionStandard.java
+cd .\BES\src\
+javac Main.java
 ```
 
 3. Execute o programa:
 ```bash
-java BasicEncryptionStandard
+java Main
 ```
