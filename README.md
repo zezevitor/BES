@@ -1,18 +1,27 @@
-## Getting Started
+# Basic Encryption Standard
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+O Basic Encryption Standard (BES) é um algoritmo simples de criptografia baseado em uma matriz 4x4 e manipulação de bits. Este projeto visa implementar esse sistema de criptografia.
 
-## Folder Structure
+## Funcionalidades
++ Conversão de texto para binário
++ Separação de binário em matrizes 4x4
++ Troca entre colunas 1/2 e 3/4 de todas as matrizes e a chave
++ XOR entre bits das matrizes com a chave
++ Shift das linhas das matrizes, +0 +1 +2 +3 respectivamente
 
-The workspace contains two folders by default, where:
+## Instalação
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+1. Clone o reposiório
+```bash
+git clone https://github.com/seu-usuario/BasicEncryptionStandard.git
+```
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+2. Compile o código:
+```bash
+javac BasicEncryptionStandard.java
+```
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+3. Execute o programa:
+```bash
+java BasicEncryptionStandard
+```
